@@ -1,0 +1,10 @@
+<p>nestedloop works!</p>
+<ul *ngFor="let users of   usersDetails">
+    <li> Name : {{users.name}}</li>
+    <li>Email : {{users.email}}</li>
+    <li>Phone : {{users.phone}}</li>
+    <li>Social Account :</li>
+    <ul *ngFor="let account of users.socialAccount">
+        <li>{{account}}</li>
+    </ul>
+</ul>

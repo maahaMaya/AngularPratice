@@ -1,0 +1,14 @@
+<p>events-function works!</p>
+<button (click)="getData('hello')">Call Function</button>
+<br/><br/>
+<input (keyup)="getData(box.value)" #box type="text" placeholder="event key up"/>
+<br/><br/>
+<input (keydown)="getData(box1.value)" #box1 type="text" placeholder="event keydown"/>
+<br/><br/>
+<input (blur)="getData(box2.value)" #box2 type="text" placeholder="event blur"/>
+<br/><br/>
+<input (input)="getData(box3.value)" #box3 type="text" placeholder="event input"/>
+<br/><br/><br/><br/>
+<h1 (mouseover)="getData('over')">Mouse Over</h1>
+<br/><br/><br/><br/>
+<h1 (mouseleave)="getData('leave')">Mouse Leave</h1>

@@ -1,0 +1,8 @@
+<p>events-input works!</p>
+<h1>{{title}}</h1>
+<input type="text" #box (keyup)="getValue(box.value)" placeholder="Enter name" name="name"/>
+<h3> value enter in Box :: {{displayVal}}</h3>
+<br/><br/>
+<input type="text" #box1  placeholder="Enter name" name="name"/>
+<button (click)="getValue(box1.value)">DisplayValue</button>
+<h3> value enter in Box :: {{displayVal}}</h3>
