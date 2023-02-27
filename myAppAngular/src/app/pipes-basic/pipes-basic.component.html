@@ -1,0 +1,26 @@
+<p>pipes-basic works!</p>
+
+<h1>{{ title | uppercase}}</h1>
+<h1>{{ capString(title) }}</h1>
+
+<h1>{{ title | lowercase}}</h1>
+
+<h2> {{ today | date}}</h2>
+<h2> {{ today | date : 'fullDate'}}</h2>
+
+--------------------------------------------
+
+<h1>{{ title | slice : 2}}</h1>
+<h1>{{ title | slice : 2 : 6 | uppercase}}</h1>
+
+<h3>{{ user | json }}</h3>
+<h3>{{ user | json | uppercase}}</h3>
+
+<h2> {{2000.3000 | number: '2.2-3'}}</h2>
+<h2>{{ 22330 | currency: "USD"}}</h2>
+
+<h1> {{ title | titlecase}}</h1>
+
+--------------------------------------------
+<h1> {{20 | usdInr : 78}}</h1>
+

@@ -1,0 +1,8 @@
+li {
+    display: inline-block;
+    padding: 10px;
+    background-color: pink;
+    width: 30%;
+    color: #fff;
+    margin-right: 10px;
+}

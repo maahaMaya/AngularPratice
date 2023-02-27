@@ -24,6 +24,13 @@ import { FormBasicComponent } from './form-basic/form-basic.component';
 import { FormsModule } from '@angular/forms';
 import { HtmlToggleComponent } from './html-toggle/html-toggle.component';
 import { TodoListComponent } from './todo-list/todo-list.component'
+import { RelationModule } from './relation/relation.module';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { TemplateReferenceVariableComponent } from './template-reference-variable/template-reference-variable.component';
+import { PipesBasicComponent } from './pipes-basic/pipes-basic.component';
+import { UsdInrPipe } from './pipes/usd-inr.pipe';
+import { FormModule } from './form/form.module';
+import { DirectiveBasicDirective } from './directiveFolder/directive-basic.directive';
 
 @NgModule({
   declarations: [
@@ -45,13 +52,21 @@ import { TodoListComponent } from './todo-list/todo-list.component'
     HeaderComponent,
     FormBasicComponent,
     HtmlToggleComponent,
-    TodoListComponent
+    TodoListComponent,
+    TwoWayBindingComponent,
+    TemplateReferenceVariableComponent,
+    PipesBasicComponent,
+    UsdInrPipe,
+    DirectiveBasicDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     UserAuthModule,
-    FormsModule
+    FormsModule,
+    RelationModule,
+    FormsModule,
+    FormModule
   ],
   providers: [],
   bootstrap: [AppComponent]

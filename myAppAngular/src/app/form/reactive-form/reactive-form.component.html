@@ -1,0 +1,12 @@
+<p>basic-form works!</p>
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <input type="text" name="email" placeholder="Enter email" formControlName="email" />
+    <br />
+    <span *ngIf="user && user.invalid && user.touched" style="color: red;">This email is not valid field</span>
+    <br />
+    <input type="password" placeholder="Enter password" name="password" formControlName="password">
+    <br />
+    <span *ngIf="password && password.invalid && password.touched" style="color: red;">This password is not valid field</span>
+    <br />
+    <button [disabled]="loginForm.invalid">Login</button>
+</form>
