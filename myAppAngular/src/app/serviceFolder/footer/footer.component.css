@@ -1,0 +1,8 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    background-color: pink;
+    width: 99%;
+    padding: 5px;
+    color: white;
+}

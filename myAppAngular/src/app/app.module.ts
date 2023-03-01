@@ -31,6 +31,7 @@ import { PipesBasicComponent } from './pipes-basic/pipes-basic.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { FormModule } from './form/form.module';
 import { DirectiveBasicDirective } from './directiveFolder/directive-basic.directive';
+import { FooterComponent } from './serviceFolder/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { DirectiveBasicDirective } from './directiveFolder/directive-basic.direc
     TemplateReferenceVariableComponent,
     PipesBasicComponent,
     UsdInrPipe,
-    DirectiveBasicDirective
+    DirectiveBasicDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
